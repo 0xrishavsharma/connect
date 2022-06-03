@@ -1,6 +1,6 @@
 # Connect - One step towards friendship
 
-A minimal decentralised social media app on which you can create your profile, search for your friends, follow people from recommended profiles and much more.
+A minimal decentralised social media app. Which has features like creating profile, searching for friends, recommending profiles and much more.
 
 #### Tech stack used:
 
