@@ -10,17 +10,22 @@ export default function Home() {
 
   useEffect( ()=> {
     fetchProfiles()
-  }, [])
+  }, )
 
   async function fetchProfiles(){
     try{
       const response = await client.query(recommendedProfiles).toPromise();
-      console.log({ response });
-      setProfiles(response.data.recommendedProfiles)
+      // console.log({ response });
+      setProfiles(response.data.recommendedProfiles);
     }catch(error){
       console.log({ error });
     }
   }
+
+  if(!profiles) return null;
+  // if(!profiles.picture) return null;
+  // if(!profiles.picture.original) return null;
+  
 
   return (
     <div className={styles.home}>
