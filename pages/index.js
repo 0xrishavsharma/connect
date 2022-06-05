@@ -22,7 +22,9 @@ export default function Home() {
     }
   }
 
-  if(!profiles) return null;
+ 
+
+  if(!profiles.picture) return null;
   // if(!profiles.picture) return null;
   // if(!profiles.picture.original) return null;
   
